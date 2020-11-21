@@ -7,19 +7,19 @@ const Random = () => {
   const [gif, setGif] = useState('');
 
   const handleClick = () => {
-    getData();
+    //getData();
   };
 
-  const getData = async () => {
-    const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
-    const { data } = await axios.get(url);
-    const imageSrc = data.data.images.downsized_large.url;
-    setGif(imageSrc);
-  };
+  // const getData = async () => {
+  //   const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
+  //   const { data } = await axios.get(url);
+  //   const imageSrc = data.data.images.downsized_large.url;
+  //   setGif(imageSrc);
+  // };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   return (
     <div className='container'>

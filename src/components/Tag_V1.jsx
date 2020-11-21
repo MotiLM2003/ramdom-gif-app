@@ -8,18 +8,11 @@ const Tag = () => {
   const [gif, setGif] = useState('');
 
   const handleClick = () => {
-    getData(tag);
-  };
-
-  const getData = async (tag) => {
-    const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${tag}`;
-    const { data } = await axios.get(url);
-    const imageSrc = data.data.images.downsized_large.url;
-    setGif(imageSrc);
+    // getData(tag);
   };
 
   useEffect(() => {
-    getData(tag);
+    //getData(tag);
   }, [tag]);
 
   return (
