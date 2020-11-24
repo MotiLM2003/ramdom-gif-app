@@ -1,8 +1,5 @@
 import React from 'react';
-
-import Random from './Random_V1';
 import '../app.css';
-import Tag from './Tag_V1';
 import RandomGif from './RandomGif';
 
 const App = () => {
@@ -11,6 +8,7 @@ const App = () => {
       <h1>Random GIF Application</h1>
       <div className='main-container'>
         <RandomGif />
+        <RandomGif isSearch={true} />
       </div>
     </div>
   );
